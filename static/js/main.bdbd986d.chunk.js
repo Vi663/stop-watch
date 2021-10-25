@@ -1,0 +1,2 @@
+(this["webpackJsonpstop-watch"]=this["webpackJsonpstop-watch"]||[]).push([[0],{11:function(t,n,c){"use strict";c.r(n);var e=c(1),o=c.n(e),s=c(3),r=c.n(s),i=(c(8),c(9),c(0));var a=function(){return Object(i.jsx)("div",{})};r.a.render(Object(i.jsx)(o.a.StrictMode,{children:Object(i.jsx)(a,{})}),document.getElementById("root"))},8:function(t,n,c){},9:function(t,n,c){}},[[11,1,2]]]);
+//# sourceMappingURL=main.bdbd986d.chunk.js.map
