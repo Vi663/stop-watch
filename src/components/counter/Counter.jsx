@@ -41,12 +41,10 @@ export function Counter({ totalSeconds }) {
   
   return (
     <div className="container d-flex justify-content-center">
-      {/* {(mm >= 60) ? 
-      : ''} */}
-      <span className="mx-3 my-5 px-2 fs-2 bg-success bg-gradient">HH: {hh} </span>
-      <span className="mx-3 my-5 px-2 fs-2 bg-success bg-gradient">MM: {mm} </span>
-      <span className="mx-3 my-5 px-2 fs-2 bg-success bg-gradient">SS: {ss} </span>
-      <hr />
+      {Object.entries(counter).map(([key, value]) => {
+        return counter.hasOwnProperty(key) && (
+          <span className="mx-3 my-5 px-2 fs-2 bg-success bg-gradient">{`${key}: ${value}`}</span>
+        )})}
     </div>
   )
 }

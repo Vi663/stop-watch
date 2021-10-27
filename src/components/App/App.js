@@ -23,13 +23,13 @@ export function App() {
       complete: () => { console.log('done') },
     };
 
-    const subscription = () => {
-      setInterval(() => { }, 1000).subscribe(observer)
-    }
+    // const subscription = () => {
+    //   setInterval(() => { }, 1000).subscribe(observer)
+    // }
     
-    const unsubscribe = () => {
-      subscription.unsubscribe()
-    }
+    // const unsubscribe = () => {
+    //   subscription.unsubscribe()
+    // }
 
     const myObservable = interval(1000);
     const btnStartClick = fromEvent(btnStart, 'click')
@@ -48,7 +48,7 @@ export function App() {
       btnStart.disabled = false
       btnStop.disabled = true
       btnResume.disabled = false
-      unsubscribe()
+      myObservable.subscribe(observer).unsubscribe()
       console.log('btnStop pushed')
     })
     btnResumeClick.subscribe(() => {

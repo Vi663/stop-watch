@@ -4,7 +4,7 @@ export function Buttons({ buttons }) {
       <ul className="list-group-horizontal btn-group-lg d-flex justify-content-between">
         {buttons.map((button, idx) => (
           // <li key={idx} className="list-group-item" >
-            <button type='button' id={button} className="btn btn-outline-secondary" >{button}</button>
+            <button key={idx} type='button' id={button} className="btn btn-outline-secondary" >{button}</button>
           // </li>
         ))}
       </ul>
